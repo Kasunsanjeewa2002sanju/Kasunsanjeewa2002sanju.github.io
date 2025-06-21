@@ -46,7 +46,7 @@
             <h1 class="title">Kasun Sanjeewa</h1>
             <p class="section__text__p2">Full Stack Devoloper</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Kasun sanjeewaupdatedCV.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
@@ -231,27 +231,163 @@
             </div>
         </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="social-icon arrow" onclick="location.href='#contact'"/> 
+        <img src="./assets/arrow.png" alt="Arrow icon" class="social-icon arrow" onclick="location.href='#skills'"/> 
     </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="social-icon contact-icon">
-                <p><a href="mail to: kasunsanjeewa2002@gmail.com">Email</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="social-icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/ kasun-sanjeewa-0b4152277/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/whatsapp.png" alt="whatsapp icon" class="social-icon contact-icon">
-                <p><a href="+94-778063196">Whatsapp</a></p>
+    <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skills-category">
+            <h2 class="skills-category-title">Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- Professional Skills -->
+        <div class="skills-category">
+            <h2 class="skills-category-title">Professional Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Communication</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Teamwork</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Problem Solving</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Project Management</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img src="./assets/arrow.png" alt="Arrow icon" class="social-icon arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    
+    <div class="contact-info-upper-container">
+        <!-- Email with modal form -->
+        <div class="contact-info-container" onclick="openEmailModal()">
+            <img src="./assets/email.png" alt="Email icon" class="social-icon contact-icon">
+            <p>Email</p>
+        </div>
+        
+        <!-- LinkedIn -->
+        <div class="contact-info-container">  
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="social-icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/kasun-sanjeewa-0b4152277/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+        
+        <!-- WhatsApp -->
+        <div class="contact-info-container">
+            <img src="./assets/whatsapp.png" alt="WhatsApp icon" class="social-icon contact-icon">
+            <p><a href="https://wa.me/94778063196" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        </div>
+    </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="social-icon arrow" onclick="location.href='#skills'"/>
+     <!-- Email Modal Form -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmailModal()">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="https://formsubmit.co/kasunsanjeewa2002@gmail.com" method="POST">
+                <!-- Required FormSubmit fields -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New message from your website">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="social-icon arrow" onclick="location.href='#about'"/>
     </section>
     <footer>
         <nav>
