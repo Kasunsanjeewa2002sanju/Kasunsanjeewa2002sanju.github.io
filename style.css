@@ -496,7 +496,7 @@ footer p{
         bottom: 0;
         width: 50px;
         height: 3px;
-        background: #4CAF50;
+        background: #616161;
     }
     
     .skills-list {
@@ -521,7 +521,7 @@ footer p{
     }
     
     .skill-info span:last-child {
-        color: #4CAF50;
+        color: #2d2e2d;
         font-weight: 700;
     }
     
@@ -534,7 +534,7 @@ footer p{
     
     .progress {
         height: 100%;
-        background: #4CAF50;
+        background: #616161;
         border-radius: 5px;
         transition: width 1s ease-in-out;
     }
