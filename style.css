@@ -9,7 +9,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #333;
 }
 html{
@@ -25,11 +25,18 @@ a, .btn{
     transition: all 0.3s ease;
 }
 
+.backgroundspline{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 /*NAVIGATION BAR*/
 nav, .nav-links{
    display: flex;
-
+    position: relative;
 }
 nav{
     justify-content: space-around;
@@ -139,6 +146,20 @@ section{
 .section-container{
     display: flex;
 }
+#welcome{
+    display: flex;
+    justify-content: center;
+    gap: 5 rem;
+    position: relative;
+    height: 70vh;
+}
+
+.welcomebackground{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
 
 /*PROFILE*/
 #profile{
@@ -146,7 +167,7 @@ section{
     justify-content: center;
     gap: 5 rem;
     position: relative;
-    height: 80vh;
+    height: 100vh;
 }
 .section__pic-container{
     display: flex;
